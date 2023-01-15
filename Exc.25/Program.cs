@@ -4,14 +4,12 @@
 // Не использовать Math.Pow() и аналоги!
 
 
-int numberA = 0;
-int numberB = 0; 
-int numC = 1;
-int degreeAB;
 
 // создаем метод возведения в степень 
 
  int degree (int numA, int numB) {
+    
+    int numC = 1;
     for (int i = 1; i <= numB; i++) {
     
     numC = numC * numA; }
@@ -22,9 +20,15 @@ int degreeAB;
 
 // просим внести искомые два числа А и В
 
+
+
+int degreeAB;
+
+
 Console.WriteLine("Введите два числа : А (целое число) и В (натуральное число), а мы возведем А в степень числа В");
 
-numberA = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = 0; 
 
 while(numberB < 1) {
 
@@ -36,7 +40,6 @@ if ( numberB < 1) {Console.WriteLine("необходимо ввести числ
 
 }
 
-   
 
 degreeAB = degree(numberA, numberB);
 
