@@ -24,21 +24,25 @@
 
 int degreeAB;
 
-
 Console.WriteLine("Введите два числа : А (целое число) и В (натуральное число), а мы возведем А в степень числа В");
 
-int numberA = Convert.ToInt32(Console.ReadLine());
-int numberB = 0; 
+    int numberA = Convert.ToInt32(Console.ReadLine());
+    int numberB = 0; 
 
-while(numberB < 1) {
+        while(numberB < 1) 
+        
+        {
 
-numberB = Convert.ToInt32(Console.ReadLine());
+            numberB = Convert.ToInt32(Console.ReadLine());
 
-if ( numberB < 1) {Console.WriteLine("необходимо ввести число > 1, внесите еще раз В"); 
+                if ( numberB < 1) 
+                    {
+                        
+                    Console.WriteLine("необходимо ввести число > 1, внесите еще раз В"); 
     
-}
+                    }
 
-}
+        }
 
 
 degreeAB = degree(numberA, numberB);
